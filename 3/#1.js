@@ -1,20 +1,16 @@
-const input = require('./input.js');
-
+const input = require('fs').readFileSync('./input', 'utf-8');
 
 const rows = input.split('\n');
 
-console.log('rows', rows);
-
 let count = 0;
-let position = 0;
 
-rows.forEach(row => {
+rows.forEach((row, index) => {
 
     // calculate position
 
     const stringLength = row.length;
 
-    const indexToCheck = position % stringLength;
+    const indexToCheck = index * 3 % stringLength;
 
     if (row[indexToCheck] === '#') {
 
@@ -23,8 +19,6 @@ rows.forEach(row => {
     } else {
         // no crash
     }
-
-    position += 3;
 });
 
 console.log('you hit', count, 'trees');
