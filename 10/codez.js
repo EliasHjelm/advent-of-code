@@ -57,3 +57,36 @@ console.log('sequences', sequences);
  * part 2 answer
  */
 console.log('answer', arse);
+
+
+/**
+ * Trying to do a dynamic programming solution
+ */
+
+const cache = {};
+
+// function to get valid paths to end from a given index
+const getSolutions = index => {
+
+    // if you have reached the end, there's only one way to go
+    if (index === numbers.length - 1) return 1;
+
+    // check cache 1st
+    if (cache[index]) return cache[index];
+
+    // get to work
+    const all = numbers.slice(index + 1, index + 4).reduce((paths, num, index2) => {
+        if (num - numbers[index] <= 3) {
+            return paths + getSolutions(index + index2 + 1);
+        } else {
+            return paths;
+        }
+    }, 0);
+
+    cache[index] = all;
+
+    return all;
+
+}
+
+console.log('the combinatinos are ', getSolutions(0));
