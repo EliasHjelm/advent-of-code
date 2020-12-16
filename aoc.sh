@@ -1,3 +1,4 @@
+#!/bin/bash
 DATE=$(date +'%d')
 COOKIE=$(cat .cookie)
 
@@ -7,7 +8,9 @@ mkdir -p $DATE
 
 curl https://adventofcode.com/2020/day/$DATE/input -o $DATE/input -b session=$COOKIE
 
-cp template.js $DATE/codez.js
+if [ ! -f $DATE/codez.js ]; then
+    cp template.js $DATE/codez.js
+fi
 
 node $DATE/codez.js
 
