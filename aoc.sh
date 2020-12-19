@@ -12,6 +12,16 @@ if [ ! -f $DATE/codez.js ]; then
     cp template.js $DATE/codez.js
 fi
 
+if [ ! -f $DATE/t1 ]; then
+    touch $DATE/t1
+fi
+
+if [ ! -f $DATE/t2 ]; then
+    touch $DATE/t2
+fi
+
+code ./
+
 node $DATE/codez.js
 
 code $DATE/codez.js
