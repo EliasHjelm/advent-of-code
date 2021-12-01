@@ -1,6 +1,7 @@
-const input = require('fs').readFileSync(require.resolve('./input'), 'utf-8');
-// const input = require('fs').readFileSync(require.resolve('./t1'), 'utf-8');
-// const input = require('fs').readFileSync(require.resolve('./t2'), 'utf-8');
+let input
+input = require('fs').readFileSync(require.resolve('./input'), 'utf-8');
+// input = require('fs').readFileSync(require.resolve('./t1'), 'utf-8');
+// input = require('fs').readFileSync(require.resolve('./t2'), 'utf-8');
 
 
 // remove newline at end of file

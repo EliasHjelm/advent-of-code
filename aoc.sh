@@ -1,27 +1,30 @@
 #!/bin/bash
 DATE=$(date +'%d')
+YEAR=$(date +'%Y')
+DIR=$YEAR/$DATE
 COOKIE=$(cat .cookie)
 
-echo Advent of code day $DATE !
+echo Advent of code $YEAR day $DATE !
 
-mkdir -p $DATE
+mkdir -p $DIR
 
-curl https://adventofcode.com/2020/day/$DATE/input -o $DATE/input -b session=$COOKIE
+curl https://adventofcode.com/$YEAR/day/$(echo $DATE | sed 's/^0//' )/input -o $DIR/input -b session=$COOKIE
 
-if [ ! -f $DATE/codez.js ]; then
-    cp template.js $DATE/codez.js
+if [ ! -f $DIR/part-1.js ]; then
+    cp template.js $DIR/part-1.js
+    cp template.js $DIR/part-2.js
 fi
 
-if [ ! -f $DATE/t1 ]; then
-    touch $DATE/t1
+if [ ! -f $DIR/t1 ]; then
+    touch $DIR/t1
 fi
 
-if [ ! -f $DATE/t2 ]; then
-    touch $DATE/t2
+if [ ! -f $DIR/t2 ]; then
+    touch $DIR/t2
 fi
 
 code ./
 
-node $DATE/codez.js
+node $DIR/part-1.js
 
-code $DATE/codez.js
+code $DIR/part-1.js
