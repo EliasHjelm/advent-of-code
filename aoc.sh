@@ -1,5 +1,6 @@
 #!/bin/bash
 DATE=$(date +'%d')
+SHORTDATE=$(date +'%d' | sed 's/^0//')
 YEAR=$(date +'%Y')
 DIR=$YEAR/$DATE
 COOKIE=$(cat .cookie)
@@ -8,7 +9,7 @@ echo Advent of code $YEAR day $DATE !
 
 mkdir -p $DIR
 
-curl https://adventofcode.com/$YEAR/day/$(echo $DATE | sed 's/^0//' )/input -o $DIR/input -b session=$COOKIE
+curl https://adventofcode.com/$YEAR/day/$SHORTDATE/input -o $DIR/input -b session=$COOKIE
 
 if [ ! -f $DIR/part-1.js ]; then
     cp template.js $DIR/part-1.js
@@ -25,6 +26,10 @@ fi
 
 code ./
 
-node $DIR/part-1.js
+cd $DIR
 
-code $DIR/part-1.js
+node ./part-1.js
+
+code ./part-1.js
+
+google-chrome https://adventofcode.com/$YEAR/day/$SHORTDATE
