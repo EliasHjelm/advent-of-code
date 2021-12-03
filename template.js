@@ -1,3 +1,5 @@
+const range = require('../../utils/range');
+
 let input
 input = require('fs').readFileSync(require.resolve('./input'), 'utf-8');
 // input = require('fs').readFileSync(require.resolve('./t1'), 'utf-8');
