@@ -1,15 +1,11 @@
 
 module.exports = (start, end) => {
 
-    if (end < start) {
-        throw 'Error: range end smaller than start';
-    }
-
-    const length = end - start + 1;
+    const length = Math.abs(end - start) + 1;
 
     const arr = Array(length).fill(null);
 
-    const r = arr.map((_, i) => start + i);
+    const r = arr.map((_, i) => Math.min(start, end) + i);
 
     return r;
 }
