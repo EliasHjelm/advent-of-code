@@ -1,4 +1,5 @@
 const range = require('../../utils/range');
+const combinations = require('../../utils/combinations');
 
 let input
 input = require('fs').readFileSync(require.resolve('./input'), 'utf-8');
