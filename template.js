@@ -12,3 +12,9 @@ const lines = input.split('\n').slice(0, -1);
 console.log('input', lines);
 
 const numbers = lines.map(Number);
+
+let iterations = 10;
+
+for (let i = 0; i < iterations; i++) {
+
+}

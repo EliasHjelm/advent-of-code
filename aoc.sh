@@ -13,7 +13,6 @@ curl https://adventofcode.com/$YEAR/day/$SHORTDATE/input -o $DIR/input -b sessio
 
 if [ ! -f $DIR/part-1.js ]; then
     cp template.js $DIR/part-1.js
-    cp template.js $DIR/part-2.js
 fi
 
 if [ ! -f $DIR/t1 ]; then
