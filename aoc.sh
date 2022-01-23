@@ -1,7 +1,7 @@
 #!/bin/bash
-DATE=$(date +'%d')
-SHORTDATE=$(date +'%d' | sed 's/^0//')
-YEAR=$(date +'%Y')
+YEAR=${1:-$(date +'%Y')}
+DATE=${2:-$(date +'%d')}
+SHORTDATE=$(echo $DATE | sed 's/^0//')
 DIR=$YEAR/$DATE
 COOKIE=$(cat .cookie)
 
