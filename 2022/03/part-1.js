@@ -12,10 +12,22 @@ input = require('fs').readFileSync(require.resolve('./input'), 'utf-8');
 const lines = input.split('\n').slice(0, -1);
 console.log('input', lines);
 
-const numbers = lines.map(Number);
+const priorities = lines.map(rucksack => {
 
-let iterations = 10;
+  const a = rucksack.slice(0, rucksack.length / 2);
+  const b = rucksack.slice(rucksack.length / 2);
 
-for (let i = 0; i < iterations; i++) {
+  const common = [...a].find(item => b.includes(item));
 
-}
+  let score = common.charCodeAt(0);
+
+  if (score >= 97) score -= 96;
+  else score -= 38;
+
+  return score;
+
+});
+
+const total = sum(priorities);
+
+console.log('total score', total);
