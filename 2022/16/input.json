@@ -1,0 +1,504 @@
+{
+  "XB": {
+    "flowRate": 0,
+    "connections": [
+      "YV",
+      "RP"
+    ],
+    "name": "XB"
+  },
+  "VN": {
+    "flowRate": 0,
+    "connections": [
+      "WL",
+      "ET"
+    ],
+    "name": "VN"
+  },
+  "NT": {
+    "flowRate": 0,
+    "connections": [
+      "CU",
+      "MQ"
+    ],
+    "name": "NT"
+  },
+  "ON": {
+    "flowRate": 0,
+    "connections": [
+      "AA",
+      "FP"
+    ],
+    "name": "ON"
+  },
+  "CW": {
+    "flowRate": 0,
+    "connections": [
+      "UH",
+      "WY"
+    ],
+    "name": "CW"
+  },
+  "KN": {
+    "flowRate": 0,
+    "connections": [
+      "JL",
+      "MQ"
+    ],
+    "name": "KN"
+  },
+  "VT": {
+    "flowRate": 0,
+    "connections": [
+      "CU",
+      "UI"
+    ],
+    "name": "VT"
+  },
+  "CR": {
+    "flowRate": 0,
+    "connections": [
+      "OA",
+      "QQ"
+    ],
+    "name": "CR"
+  },
+  "YX": {
+    "flowRate": 0,
+    "connections": [
+      "YJ",
+      "CI"
+    ],
+    "name": "YX"
+  },
+  "WL": {
+    "flowRate": 7,
+    "connections": [
+      "OQ",
+      "VN",
+      "PU",
+      "VF",
+      "UA"
+    ],
+    "name": "WL"
+  },
+  "HV": {
+    "flowRate": 0,
+    "connections": [
+      "OQ",
+      "OK"
+    ],
+    "name": "HV"
+  },
+  "JM": {
+    "flowRate": 21,
+    "connections": [
+      "RG",
+      "OH",
+      "JE"
+    ],
+    "name": "JM"
+  },
+  "XF": {
+    "flowRate": 24,
+    "connections": [
+      "OL",
+      "TM"
+    ],
+    "name": "XF"
+  },
+  "VD": {
+    "flowRate": 0,
+    "connections": [
+      "MY",
+      "OK"
+    ],
+    "name": "VD"
+  },
+  "AA": {
+    "flowRate": 0,
+    "connections": [
+      "KO",
+      "ON",
+      "UI",
+      "QE",
+      "VF"
+    ],
+    "name": "AA"
+  },
+  "JE": {
+    "flowRate": 0,
+    "connections": [
+      "JM",
+      "NZ"
+    ],
+    "name": "JE"
+  },
+  "UN": {
+    "flowRate": 0,
+    "connections": [
+      "UA",
+      "WY"
+    ],
+    "name": "UN"
+  },
+  "CC": {
+    "flowRate": 0,
+    "connections": [
+      "IV",
+      "CU"
+    ],
+    "name": "CC"
+  },
+  "PU": {
+    "flowRate": 0,
+    "connections": [
+      "JL",
+      "WL"
+    ],
+    "name": "PU"
+  },
+  "UA": {
+    "flowRate": 0,
+    "connections": [
+      "WL",
+      "UN"
+    ],
+    "name": "UA"
+  },
+  "OJ": {
+    "flowRate": 13,
+    "connections": [
+      "AZ",
+      "FP",
+      "MY",
+      "OL",
+      "ET"
+    ],
+    "name": "OJ"
+  },
+  "CJ": {
+    "flowRate": 0,
+    "connections": [
+      "MQ",
+      "WS"
+    ],
+    "name": "CJ"
+  },
+  "IV": {
+    "flowRate": 0,
+    "connections": [
+      "NZ",
+      "CC"
+    ],
+    "name": "IV"
+  },
+  "NZ": {
+    "flowRate": 4,
+    "connections": [
+      "WS",
+      "IV",
+      "IU",
+      "EQ",
+      "JE"
+    ],
+    "name": "NZ"
+  },
+  "TM": {
+    "flowRate": 0,
+    "connections": [
+      "HL",
+      "XF"
+    ],
+    "name": "TM"
+  },
+  "SG": {
+    "flowRate": 0,
+    "connections": [
+      "MQ",
+      "OH"
+    ],
+    "name": "SG"
+  },
+  "QQ": {
+    "flowRate": 12,
+    "connections": [
+      "CR"
+    ],
+    "name": "QQ"
+  },
+  "WX": {
+    "flowRate": 15,
+    "connections": [
+      "CI",
+      "SN"
+    ],
+    "name": "WX"
+  },
+  "VF": {
+    "flowRate": 0,
+    "connections": [
+      "WL",
+      "AA"
+    ],
+    "name": "VF"
+  },
+  "RP": {
+    "flowRate": 0,
+    "connections": [
+      "WY",
+      "XB"
+    ],
+    "name": "RP"
+  },
+  "SN": {
+    "flowRate": 0,
+    "connections": [
+      "WX",
+      "OI"
+    ],
+    "name": "SN"
+  },
+  "HL": {
+    "flowRate": 0,
+    "connections": [
+      "OK",
+      "TM"
+    ],
+    "name": "HL"
+  },
+  "ET": {
+    "flowRate": 0,
+    "connections": [
+      "OJ",
+      "VN"
+    ],
+    "name": "ET"
+  },
+  "UI": {
+    "flowRate": 0,
+    "connections": [
+      "AA",
+      "VT"
+    ],
+    "name": "UI"
+  },
+  "FP": {
+    "flowRate": 0,
+    "connections": [
+      "ON",
+      "OJ"
+    ],
+    "name": "FP"
+  },
+  "IU": {
+    "flowRate": 0,
+    "connections": [
+      "NZ",
+      "QE"
+    ],
+    "name": "IU"
+  },
+  "JQ": {
+    "flowRate": 0,
+    "connections": [
+      "HR",
+      "CU"
+    ],
+    "name": "JQ"
+  },
+  "CU": {
+    "flowRate": 5,
+    "connections": [
+      "NT",
+      "VT",
+      "JQ",
+      "CC"
+    ],
+    "name": "CU"
+  },
+  "WY": {
+    "flowRate": 19,
+    "connections": [
+      "CW",
+      "UN",
+      "RP"
+    ],
+    "name": "WY"
+  },
+  "YJ": {
+    "flowRate": 16,
+    "connections": [
+      "YX"
+    ],
+    "name": "YJ"
+  },
+  "HR": {
+    "flowRate": 0,
+    "connections": [
+      "JQ",
+      "JL"
+    ],
+    "name": "HR"
+  },
+  "RM": {
+    "flowRate": 11,
+    "connections": [
+      "OI",
+      "AZ"
+    ],
+    "name": "RM"
+  },
+  "RG": {
+    "flowRate": 0,
+    "connections": [
+      "YV",
+      "JM"
+    ],
+    "name": "RG"
+  },
+  "MY": {
+    "flowRate": 0,
+    "connections": [
+      "VD",
+      "OJ"
+    ],
+    "name": "MY"
+  },
+  "QE": {
+    "flowRate": 0,
+    "connections": [
+      "AA",
+      "IU"
+    ],
+    "name": "QE"
+  },
+  "OK": {
+    "flowRate": 17,
+    "connections": [
+      "HL",
+      "UH",
+      "VD",
+      "HV"
+    ],
+    "name": "OK"
+  },
+  "CI": {
+    "flowRate": 0,
+    "connections": [
+      "WX",
+      "YX"
+    ],
+    "name": "CI"
+  },
+  "OL": {
+    "flowRate": 0,
+    "connections": [
+      "XF",
+      "OJ"
+    ],
+    "name": "OL"
+  },
+  "WS": {
+    "flowRate": 0,
+    "connections": [
+      "CJ",
+      "NZ"
+    ],
+    "name": "WS"
+  },
+  "OH": {
+    "flowRate": 0,
+    "connections": [
+      "JM",
+      "SG"
+    ],
+    "name": "OH"
+  },
+  "OQ": {
+    "flowRate": 0,
+    "connections": [
+      "WL",
+      "HV"
+    ],
+    "name": "OQ"
+  },
+  "OA": {
+    "flowRate": 0,
+    "connections": [
+      "CR",
+      "MQ"
+    ],
+    "name": "OA"
+  },
+  "OI": {
+    "flowRate": 0,
+    "connections": [
+      "SN",
+      "RM"
+    ],
+    "name": "OI"
+  },
+  "YV": {
+    "flowRate": 25,
+    "connections": [
+      "RG",
+      "XB"
+    ],
+    "name": "YV"
+  },
+  "JL": {
+    "flowRate": 3,
+    "connections": [
+      "KO",
+      "HR",
+      "PU",
+      "KN",
+      "EQ"
+    ],
+    "name": "JL"
+  },
+  "AZ": {
+    "flowRate": 0,
+    "connections": [
+      "OJ",
+      "RM"
+    ],
+    "name": "AZ"
+  },
+  "UH": {
+    "flowRate": 0,
+    "connections": [
+      "CW",
+      "OK"
+    ],
+    "name": "UH"
+  },
+  "KO": {
+    "flowRate": 0,
+    "connections": [
+      "AA",
+      "JL"
+    ],
+    "name": "KO"
+  },
+  "EQ": {
+    "flowRate": 0,
+    "connections": [
+      "NZ",
+      "JL"
+    ],
+    "name": "EQ"
+  },
+  "MQ": {
+    "flowRate": 10,
+    "connections": [
+      "CJ",
+      "OA",
+      "NT",
+      "SG",
+      "KN"
+    ],
+    "name": "MQ"
+  }
+}

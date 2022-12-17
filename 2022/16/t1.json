@@ -1,0 +1,82 @@
+{
+  "AA": {
+    "flowRate": 0,
+    "connections": [
+      "DD",
+      "II",
+      "BB"
+    ],
+    "name": "AA"
+  },
+  "BB": {
+    "flowRate": 13,
+    "connections": [
+      "CC",
+      "AA"
+    ],
+    "name": "BB"
+  },
+  "CC": {
+    "flowRate": 2,
+    "connections": [
+      "DD",
+      "BB"
+    ],
+    "name": "CC"
+  },
+  "DD": {
+    "flowRate": 20,
+    "connections": [
+      "CC",
+      "AA",
+      "EE"
+    ],
+    "name": "DD"
+  },
+  "EE": {
+    "flowRate": 3,
+    "connections": [
+      "FF",
+      "DD"
+    ],
+    "name": "EE"
+  },
+  "FF": {
+    "flowRate": 0,
+    "connections": [
+      "EE",
+      "GG"
+    ],
+    "name": "FF"
+  },
+  "GG": {
+    "flowRate": 0,
+    "connections": [
+      "FF",
+      "HH"
+    ],
+    "name": "GG"
+  },
+  "HH": {
+    "flowRate": 22,
+    "connections": [
+      "GG"
+    ],
+    "name": "HH"
+  },
+  "II": {
+    "flowRate": 0,
+    "connections": [
+      "AA",
+      "JJ"
+    ],
+    "name": "II"
+  },
+  "JJ": {
+    "flowRate": 21,
+    "connections": [
+      "II"
+    ],
+    "name": "JJ"
+  }
+}
