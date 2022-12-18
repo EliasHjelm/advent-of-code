@@ -21,3 +21,5 @@ function combinations<T>(...combs: T[][]) {
 
   return combos;
 }
+
+export default combinations;
