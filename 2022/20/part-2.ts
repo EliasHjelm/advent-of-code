@@ -15,7 +15,7 @@ export interface GPS {
 }
 
 let input: string = require('fs').readFileSync(require.resolve('./input'), 'utf-8');
-input = require('fs').readFileSync(require.resolve('./t1'), 'utf-8');
+// input = require('fs').readFileSync(require.resolve('./t1'), 'utf-8');
 
 // console.log('input', input);
 
@@ -39,23 +39,40 @@ assert(start);
 
 // console.log('le map', map);
 
+let counter = 0;
 const run = async () => {
+  const startTime = Date.now();
   for (let j = 0; j < 10; j++) {
     console.log('begin round', j + 1);
     for (const GPS of numbers) {
+      if (++counter % 10 === 0) {
+        const percent = (counter / 50000) * 100;
+        const elapsedSeconds = (Date.now() - startTime) / 1000;
+        const estimatedTotalSeconds = (100 / percent) * elapsedSeconds;
+        const estimatedSecondsRemaining = estimatedTotalSeconds - elapsedSeconds;
+        const minutesRemaining = Math.floor(estimatedSecondsRemaining / 60);
+        const secondsRemaining = Math.round(estimatedSecondsRemaining) % 60;
+        console.log(
+          `Progress: ${counter} / 50 000 total (${percent.toFixed(
+            1
+          )}%) in ${elapsedSeconds.toFixed(
+            1
+          )} seconds - estimated ${minutesRemaining}m ${secondsRemaining}s remaining`
+        );
+      }
       let steps = Number(GPS.value);
 
-      if (steps >= numbers.length) {
-        steps = steps % numbers.length;
+      if (steps >= numbers.length - 1) {
+        steps = steps % (numbers.length - 1);
       }
 
       if (steps < 0) {
         // steps = numbers.length + steps - 1;
-        steps = numbers.length - (Math.abs(steps) % numbers.length);
+        steps = numbers.length - 1 - (Math.abs(steps) % (numbers.length - 1));
       }
 
       if (steps === 0) {
-        logMap(map, start);
+        // logMap(map, start);
         continue;
       }
 
