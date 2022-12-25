@@ -5,7 +5,7 @@
   "main": "template.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/ts-node $(ls -t ./**/**/part-*.ts | head -n1)"
+    "start": "node --inspect -r ts-node/register $(ls -t ./**/**/part-*.ts | head -n1)"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/EliasHjelm/advent-of-code-2020#readme",
   "dependencies": {
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.1",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
